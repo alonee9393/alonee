@@ -12,7 +12,7 @@ Google Colab을 활용해 재현하고 수정한 학습용 실습 기록입니�
 학습 흐름을 끊지 않는 것을 목표로 합니다.
 
 ## 사용 환경
-- Python (Google Colab)
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
 - pandas, numpy, scikit-learn
 
 ## 사용 교재
