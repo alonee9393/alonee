@@ -17,7 +17,11 @@ Google Colab을 활용해 재현하고 수정한 학습용 실습 기록입니�
 
 ## 사용 교재
 - 혼자 공부하는 머신러닝·딥러닝
+- gradientboosting.ipynb
 - 파이썬 머신러닝 완벽 가이드
+- Learning.ipynb
+- Learning_2.ipynb
+- Learning_3.ipynb
 
 ## 노트북 구성
 
