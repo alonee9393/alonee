@@ -22,6 +22,7 @@ Google Colab을 활용해 재현하고 수정한 학습용 실습 기록입니�
 - Learning.ipynb
 - Learning_2.ipynb
 - Learning_3.ipynb
+- Learning_boston.ipynb
 
 ## 노트북 구성
 
