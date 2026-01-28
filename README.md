@@ -1,38 +1,46 @@
-# alonee  
+# alone_취준 ing..
+
 ## Machine Learning Practice (Google Colab)
 
 ## 개요
-국비 교육 과정에서 사용한 머신러닝 및 Python 교재 예제를 기반으로,
-구버전 내용을 최신 Python / scikit-learn 환경에서
+국비 교육 과정에서 사용한 머신러닝 및 Python 교재 예제를 기반으로,  
+구버전 내용을 최신 Python / scikit-learn 환경에서  
 Google Colab을 활용해 재현하고 수정한 학습용 실습 기록입니다.
 
-로컬 개발 환경이 제한된 상황에서
-클라우드 기반 노트북 환경을 활용하여
-데이터 처리와 머신러닝 기초 감각을 유지하고,
+로컬 개발 환경이 제한된 상황에서  
+클라우드 기반 노트북 환경을 활용하여  
+데이터 처리와 머신러닝 기초 감각을 유지하고,  
 학습 흐름을 끊지 않는 것을 목표로 합니다.
 
+단순히 교재 코드를 실행하는 데 그치지 않고,  
+라이브러리 버전 차이로 인한 오류를 직접 수정하며  
+실행 가능하도록 정리하는 데 중점을 두었습니다.
+
+---
+
 ## 사용 환경
-<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> Colab 환경
-- pandas, numpy, scikit-learn
+<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+
+- Google Colab  
+- Python  
+- pandas, numpy, scikit-learn  
+
+---
 
 ## 사용 교재
-- 혼자 공부하는 머신러닝·딥러닝
-- gradientboosting.ipynb
-- 파이썬 머신러닝 완벽 가이드
-- Learning.ipynb
-- Learning_2.ipynb
-- Learning_3.ipynb
-- Learning_boston.ipynb
+- 혼자 공부하는 머신러닝·딥러닝  
+- 파이썬 머신러닝 완벽 가이드  
+
+---
 
 ## 노트북 구성
 
 ### 머신러닝
 - **gradientboosting.ipynb**
   - 교재: 혼자 공부하는 머신러닝·딥러닝
-  - Gradient Boosting 알고리즘의 개념 이해
-  - 데이터 준비 → 모델 학습 → 성능 평가까지
-    전체 흐름을 하나의 노트북으로 정리
-  - 라이브러리 버전 차이로 인한 코드 수정 및 실행 검증
+  - Gradient Boosting 알고리즘의 기본 개념 학습
+  - 데이터 준비 → 모델 학습 → 성능 평가까지의 전체 흐름 정리
+  - scikit-learn 버전 차이로 인한 코드 수정 및 실행 검증 경험
 
 ### Python / 머신러닝 기초
 - **Learning.ipynb**
@@ -43,27 +51,78 @@ Google Colab을 활용해 재현하고 수정한 학습용 실습 기록입니�
   - 데이터 처리 및 머신러닝 기초 실습 위주 정리
   - 반복 학습과 복습을 위한 단계별 노트북 구성
 
+- **Learning_Boston.ipynb**
+  - 교재의 Boston 주택 가격 예제가
+    scikit-learn 최신 버전에서 제거되어
+    California Housing 데이터셋으로 대체
+  - 데이터 구조 차이를 반영하여
+    전처리 및 모델 학습 코드 수정
+  - 현재 추가 실험 및 코드 개선 작업 진행 중
+
+---
+
 ## 주요 학습 내용
 - 데이터 전처리 (결측치 처리, 스케일링 등)
 - 머신러닝 모델 학습 및 간단한 성능 평가
 - deprecated 함수 및 라이브러리 버전 차이에 따른 코드 수정
+- Python 기반 데이터 처리 흐름 이해
+
+---
+
+## 내가 이 프로젝트에서 한 일
+- 교재 예제를 최신 Python / scikit-learn 환경에 맞게 수정
+- 실행 오류 발생 시 공식 문서 및 보조 자료를 참고하여 원인 분석
+- deprecated 옵션 제거 및 대체 코드 적용
+- Boston 주택 가격 데이터셋 제거 이슈 인지 및
+  California Housing 데이터셋으로 대체
+- 단순 실행이 아닌, 모델 학습 흐름과 데이터 처리 과정 이해에 집중
+- 반복 실행을 통해 머신러닝 파이프라인 감각 유지
+
+---
+
+## 트러블슈팅 사례
+- Gradient Boosting 예제 실행 중  
+  scikit-learn 버전 차이로 인한 파라미터 오류 발생
+- 공식 문서를 참고하여  
+  deprecated 옵션을 제거하고 대체 파라미터로 수정
+- 수정 후 정상적으로 모델 학습 및 성능 평가 확인
+
+- Boston 주택 가격 데이터셋이  
+  scikit-learn 최신 버전에서 제거됨
+- 공식 문서를 통해 deprecation 사유 확인
+- California Housing 데이터셋으로 대체하여
+  기존 예제 흐름 유지
+- 데이터 구조 차이에 따른 코드 수정 후 정상 실행 확인
+
+---
 
 ## 학습 및 문제 해결 방식
-교재 예제를 기준으로 학습을 진행하되,
-발간 시기가 오래된 부분은
-현재 Google Colab 환경과의 라이브러리 차이로 인해
+교재 예제를 기준으로 학습을 진행하되,  
+발간 시기가 오래된 부분은  
+현재 Google Colab 환경과의 라이브러리 차이로 인해  
 실행 오류가 발생하는 경우가 많았습니다.
 
-이러한 문제는 공식 문서와 GPT를 보조적으로 참고하여
-원인을 파악하고,
+이러한 문제는  
+공식 문서와 GPT를 보조적으로 참고하여 원인을 파악하고,  
 직접 실행과 검증을 통해 최종적으로 코드 수정 여부를 판단했습니다.
+
+---
 
 ## 특징
 - 로컬 설치 없이 실행 가능한 Google Colab 환경 활용
-- 교재 예제를 그대로 따라가기보다
-  최신 환경에 맞게 수정하며 학습
+- 교재 예제를 그대로 따라가기보다 최신 환경에 맞게 수정
 - 데이터 구조 이해와 Python 기반 처리 흐름에 중점
 - 학습 과정과 시행착오를 기록하는 데 목적을 둠
 
+---
+
+## 이 학습을 계속하는 이유
+- 공백기 동안에도 코딩 감각과 데이터 처리 흐름을 유지하기 위해
+- 이론 위주의 학습이 아닌, 실행 가능한 코드 경험을 쌓기 위해
+- 이후 프로젝트 및 실무 학습으로 확장하기 위한 기초 정리 목적
+
+---
+
 ## 진행 상태
-- 교재 기반 학습 및 실습 지속 진행 중
+- 교재 기반 머신러닝 및 Python 학습 지속 진행 중
+- Learning_Boston.ipynb 노트북 추가 실험 및 개선 작업 진행 중
